@@ -1,0 +1,26 @@
+@import "tailwindcss";
+
+/* DaisyUI + tema para Tailwind v4 */
+@plugin "daisyui" { themes: light --default, dark --prefersdark, lego; }
+
+@plugin "daisyui/theme" {
+  name: "lego";
+  default: false;
+  color-scheme: light;
+
+  --color-primary: #2563eb;
+  --color-secondary: #22d3ee;
+  --color-accent: #f59e0b;
+  --color-neutral: #1f2937;
+  --color-base-100: #0b1320;
+  --color-info: #60a5fa;
+  --color-success: #22c55e;
+  --color-warning: #f59e0b;
+  --color-error: #ef4444;
+
+  --radius-selector: 1rem;
+  --radius-field: .25rem;
+  --radius-box: .75rem;
+}
+
+html, body, #root { height: 100%; }
